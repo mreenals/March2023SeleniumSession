@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Regression Suite" thread-count="5" parallel="tests" verbose="4">
+
+  <test name="Google Test_chrome">
+	  <parameter name="browser" value="chrome" />
+	  <parameter name="url" value="https://www.google.com/" />
+	  <parameter name="headless" value="false" />
+	  <parameter name="url" value="https://www.google.com" />
+     <classes>
+     	<class name="mytest.GoogleTest"/>
+     </classes>
+  </test>
+  
+  <test name="Google Test_firefox">
+	  <parameter name="browser" value="firefox" />
+	  <parameter name="url" value="https://www.google.com/" />
+	  <parameter name="headless" value="false" />
+     <classes>
+     	<class name="mytest.GoogleTest"/>
+     </classes>
+  </test>
+  
+ <test name="Open Cart Test_chrome">
+	  <parameter name="browser" value="chrome" />
+	  <parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php?route=account/login" />
+	  <parameter name="headless" value="false" />
+     <classes>
+     	<class name="mytest.OpenCartTest"/>
+     </classes>
+  </test>
+  
+   <test name="Open Cart Test_firefox">
+	  <parameter name="browser" value="firefox" />
+	  <parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php?route=account/login" />
+	  <parameter name="headless" value="false" />
+     <classes>
+     	<class name="mytest.OpenCartTest"/>
+     </classes>
+  </test>
+  
+  <test name="OrangeHRM test">
+	  <parameter name="browser" value="edge" />
+	  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" />
+	  <parameter name="headless" value="false" />
+     <classes>
+     	<class name="mytest.OrangeHRMTest"/>
+     </classes>
+  </test>
+  
+<!--  <test name="Search test">
+	  <parameter name="browser" value="chrome" />
+	  <parameter name="headless" value="true" />
+	  <parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php?route=account/login" />
+     <classes>
+     	<class name="mytest.SearchTest"/>
+     </classes>
+  </test>-->
+  
+</suite> <!-- Suite -->
